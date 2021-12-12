@@ -9,7 +9,7 @@ Created on Sat Dec 11 18:19:23 2021
 import numpy as np
 import scipy.integrate as spi
 import matplotlib.pyplot as plt
-#test
+
 def heat_eq(t,h):
     print(t)   # to check the current time for debugging
     hxx = (np.concatenate((np.roll(h,-1)[:-1],[0])) - 2*h + np.concatenate(([0],np.roll(h,1)[1:])))/0.02020202**2 #np.roll
